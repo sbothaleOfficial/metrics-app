@@ -25,15 +25,17 @@ Password: Pspsb@664
 
 To add the Prometheus data source to Grafana, follow these steps:
 
-Log in to Grafana using the above credentials.
+* Log in to Grafana using the above credentials.
 
-Click on "Add data source" in the Grafana sidebar.
+* Click on "Add data source" in the Grafana sidebar.
 
-Select "Prometheus" as the data source type, and enter the URL for your Prometheus server in the "HTTP URL" field. The default URL for a local Prometheus server is http://localhost:9090.
 
-Click the "Save & Test" button to test the connection to your Prometheus server.
+* Select "Prometheus" as the data source type, and enter the URL for your Prometheus server in the "HTTP URL" field. The default URL for a local Prometheus server is http://localhost:9090.
 
-Once you have added the Prometheus data source, you can create a new dashboard in Grafana to visualize the metrics data collected by the application.
+
+* Click the "Save & Test" button to test the connection to your Prometheus server.
+
+* Once you have added the Prometheus data source, you can create a new dashboard in Grafana to visualize the metrics data collected by the application.
 
 Additional Resources
 For more information on how to use the io.dropwizard.metrics library to collect and export metrics data, refer to the official documentation:
@@ -43,3 +45,12 @@ For more information on how to use Prometheus and Grafana to visualize metrics d
 
 Prometheus Documentation
 Grafana Documentation
+
+### Running Grafana
+
+To run Grafana, navigate to the directory where you extracted the files and run the following command:
+
+`cd /Users/suraj/Development/grafana-9.4.7
+./bin/grafana-server web`
+
+This will start Grafana on the default port of 3000. You can access Grafana by opening a web browser and navigating to http://localhost:3000
